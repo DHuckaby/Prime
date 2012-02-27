@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <com.handlerexploit.common.widgets.RemoteImageView
+        android:id="@+id/icon"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="75dip"
+        android:gravity="center_vertical"
+        android:padding="10dip"
+        android:singleLine="true"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
