@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LazyListExample</string>
+    <string name="app_name">Examples</string>
+    <string name="lazy_list_example">Lazy List Example</string>
 
 </resources>
