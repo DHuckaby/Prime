@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Examples</string>
-    <string name="lazy_list_example">Lazy List Example</string>
+    <string name="listview_example">ListView</string>
+    <string name="gridview_example">GridView</string>
 
 </resources>

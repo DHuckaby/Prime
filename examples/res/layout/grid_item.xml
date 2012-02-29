@@ -17,6 +17,7 @@
         android:layout_height="?android:attr/listPreferredItemHeight"
         android:gravity="center_vertical"
         android:padding="10dip"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:visibility="gone" />
 
 </LinearLayout>
