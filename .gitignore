@@ -11,3 +11,4 @@ local.properties
 build.properties
 build.xml
 proguard.cfg
+lint.xml
