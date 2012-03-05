@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="horizontal" >
 
-    <com.handlerexploit.common.widgets.RemoteImageView
+    <com.handlerexploit.prime.widgets.RemoteImageView
         android:id="@+id/icon"
         android:layout_width="?android:attr/listPreferredItemHeight"
         android:layout_height="?android:attr/listPreferredItemHeight"
