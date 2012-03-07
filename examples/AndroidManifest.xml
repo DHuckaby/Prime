@@ -37,6 +37,15 @@
                 <category android:name="com.handlerexploit.example.EXAMPLE" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.RemoteStateListExample"
+            android:label="@string/statelist_example" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.handlerexploit.example.EXAMPLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
