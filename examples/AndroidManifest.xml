@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.LazyListExample"
+            android:name=".activities.ListViewExample"
             android:label="@string/listview_example" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.LazyGridExample"
+            android:name=".activities.GridViewExample"
             android:label="@string/gridview_example" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
