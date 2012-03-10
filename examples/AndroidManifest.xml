@@ -20,6 +20,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activities.ViewPagerExample"
+            android:label="@string/viewpager_example" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.handlerexploit.example.EXAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".activities.ListViewExample"
             android:label="@string/listview_example" >
             <intent-filter>

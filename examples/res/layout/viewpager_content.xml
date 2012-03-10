@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</FrameLayout>

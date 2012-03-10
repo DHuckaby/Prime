@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Examples</string>
+    <string name="viewpager_example">ViewPager</string>
     <string name="listview_example">ListView</string>
     <string name="gridview_example">GridView</string>
     <string name="statelist_example">StateListDrawable</string>
