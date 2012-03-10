@@ -1,0 +1,14 @@
+_Store
+.fatjar
+.settings
+.classpath
+.project
+gen
+bin
+default.properties
+project.properties
+local.properties
+build.properties
+build.xml
+proguard.cfg
+lint.xml
