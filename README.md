@@ -10,7 +10,7 @@ Implementation can be as simple as:
     RemoteImageView remoteImageView = ...;
     String imageURL = ...;
     ...
-    remoteImageView.setImageBitmap(imageURL);
+    remoteImageView.setImageURL(imageURL);
 
 More extensive examples can be found [here][3].
 
