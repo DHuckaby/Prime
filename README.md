@@ -12,12 +12,14 @@ Implementation can be as simple as:
     ...
     remoteImageView.setImageBitmap(imageURL);
 
+More extensive examples can be found [here][3].
+
 ![Examples][2]
 
 Documentation
 =
 
-* [JavaDoc] [1]
+* [JavaDoc][1]
 
 Developed By
 =
@@ -43,3 +45,4 @@ License
 
 [1]: http://dhuckaby.github.com/Prime/
 [2]: http://dhuckaby.github.com/Prime/images/featured.png
+[3]: https://github.com/DHuckaby/Prime/tree/master/examples
