@@ -5,6 +5,15 @@ Prime is an all-in-one image management solution. One of the major hurdles for d
 
 ![Examples][2]
 
+Usage
+=
+Implementation can be as simple as:
+
+    RemoteImageView remoteImageView = ...;
+    String imageURL = ...;
+    ...
+    remoteImageView.setImageBitmap(imageURL);
+
 Documentation
 =
 
