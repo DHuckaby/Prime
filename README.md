@@ -1,10 +1,17 @@
-Documentation
-============
+Prime
+=
 
- * JavaDoc - <http://dhuckaby.github.com/Prime/>
+Prime is an all-in-one image management solution. One of the major hurdles for developers is to correctly implement an remote image retrieval system, Prime handles all of it for you. Using our simple and powerful apis you can retrieve images painlessly and fluidly in all development scenarios.
+
+![Examples][2]
+
+Documentation
+=
+
+* [JavaDoc] [1]
 
 Developed By
-============
+=
 
 * Daniel Huckaby - <handlerexploit@gmail.com>
 
@@ -22,3 +29,6 @@ License
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
+
+[1]: http://dhuckaby.github.com/Prime/
+[2]: http://dl.dropbox.com/u/5680413/examples.png
