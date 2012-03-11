@@ -33,4 +33,4 @@ License
     limitations under the License.
 
 [1]: http://dhuckaby.github.com/Prime/
-[2]: http://dhuckaby.github.com/Prime/featured.png
+[2]: http://dhuckaby.github.com/Prime/images/featured.png
