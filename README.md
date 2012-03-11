@@ -31,4 +31,4 @@ License
     GNU General Public License for more details.
 
 [1]: http://dhuckaby.github.com/Prime/
-[2]: http://dhuckaby.github.com/Prime/examples.png
+[2]: http://dhuckaby.github.com/Prime/featured.png
