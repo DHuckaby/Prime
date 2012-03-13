@@ -12,7 +12,7 @@ Implementation can be as simple as:
     ...
     remoteImageView.setImageURL(imageURL);
 
-More extensive examples can be found [here][3].
+More extensive examples can be found on [Google Play][3].
 
 ![Examples][2]
 
@@ -45,4 +45,4 @@ License
 
 [1]: http://dhuckaby.github.com/Prime/
 [2]: http://dhuckaby.github.com/Prime/images/featured.png
-[3]: https://github.com/DHuckaby/Prime/tree/master/examples
+[3]: https://play.google.com/store/apps/details?id=com.handlerexploit.prime.example
