@@ -3,6 +3,8 @@ Prime
 
 Prime is an all-in-one image management solution. One of the major hurdles for developers is to correctly implement an remote image retrieval system, Prime handles all of it for you. Using our simple and powerful apis you can retrieve images painlessly and fluidly in all development scenarios.
 
+Prime is available as a JAR file from the downloads area of this GitHub repo.
+
 Usage
 =
 Implementation can be as simple as:
