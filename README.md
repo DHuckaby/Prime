@@ -80,6 +80,6 @@ License
 [2]: http://dhuckaby.github.com/Prime/images/featured.png
 [3]: https://play.google.com/store/apps/details?id=com.handlerexploit.prime.example
 [4]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/widgets/RemoteImageView.html#setImageURL(java.lang.String)
-[5]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/utils/ImageManager.html#get(java.lang.String, com.handlerexploit.prime.utils.ImageManager.OnImageReceivedListener)
+[5]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/utils/ImageManager.html#get(java.lang.String,%20com.handlerexploit.prime.utils.ImageManager.OnImageReceivedListener)
 [6]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/utils/ImageManager.html#get(com.handlerexploit.prime.utils.ImageManager.Request)
 [7]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/utils/ImageManager.html#get(java.lang.String)
