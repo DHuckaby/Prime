@@ -77,7 +77,7 @@ License
     limitations under the License.
 
 [1]: http://dhuckaby.github.com/Prime/
-[2]: http://dhuckaby.github.com/Prime/images/featured.png
+[2]: http://dhuckaby.github.com/Prime/images/featured.jpg
 [3]: https://play.google.com/store/apps/details?id=com.handlerexploit.prime.example
 [4]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/widgets/RemoteImageView.html#setImageURL(java.lang.String)
 [5]: http://dhuckaby.github.com/Prime/com/handlerexploit/prime/utils/ImageManager.html#get(java.lang.String,%20com.handlerexploit.prime.utils.ImageManager.OnImageReceivedListener)
