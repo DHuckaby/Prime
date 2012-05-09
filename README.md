@@ -28,7 +28,7 @@ If you want to receive images asynchronously without the use of the RemoteImageV
         public void onImageReceived(String source, Bitmap bitmap) {
             // Do something with the retrieved Bitmap
         }
-    }
+    };
  
     imageManager.get(new Request() {
  
