@@ -304,8 +304,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<implements name="com.handlerexploit.prime.utils.ImageManager.ExtendedRequest">
-</implements>
 <constructor name="RemoteImageView"
  type="com.handlerexploit.prime.widgets.RemoteImageView"
  static="false"
@@ -342,45 +340,6 @@
 <parameter name="defStyle" type="int">
 </parameter>
 </constructor>
-<method name="getSource"
- return="java.lang.String"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="onImageReceived"
- return="void"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="source" type="java.lang.String">
-</parameter>
-<parameter name="bitmap" type="android.graphics.Bitmap">
-</parameter>
-</method>
-<method name="onPreProcess"
- return="android.graphics.Bitmap"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="raw" type="android.graphics.Bitmap">
-</parameter>
-</method>
 <method name="setImageURL"
  return="void"
  abstract="false"
