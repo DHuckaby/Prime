@@ -1,0 +1,5 @@
+-d ~/Documents/Prime/website
+-federate Android http://developer.android.com/reference
+-federationxml Android http://doclava.googlecode.com/svn/static/api/android-10.xml
+-hdf project.name "Prime"
+-templatedir ~/Documents/Prime/website/template
