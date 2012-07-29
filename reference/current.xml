@@ -262,36 +262,6 @@
 </parameter>
 </method>
 </interface>
-<class name="ImageManager.LowPriorityThreadFactory"
- extends="java.lang.Object"
- abstract="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="ImageManager.LowPriorityThreadFactory"
- type="com.handlerexploit.prime.utils.ImageManager.LowPriorityThreadFactory"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</constructor>
-<method name="newThread"
- return="java.lang.Thread"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="r" type="java.lang.Runnable">
-</parameter>
-</method>
-</class>
 <interface name="ImageManager.OnImageReceivedListener"
  abstract="true"
  static="true"
