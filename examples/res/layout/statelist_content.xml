@@ -10,8 +10,7 @@
         android:gravity="center"
         android:orientation="vertical" >
 
-        <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
+        <com.handlerexploit.prime.example.widgets.ProgressView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
