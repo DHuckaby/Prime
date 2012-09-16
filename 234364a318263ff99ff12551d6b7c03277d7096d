@@ -1,0 +1,13 @@
+In the past when an image was requested we would read the entire image into a byte array and do two things with it:
+
+1) We would store it locally into the DiskLruCache
+2) We would decode it directly into a Bitmap
+
+This was originally done to reduce the amount of times we had to load the entire image into memory, but it was fundamentally flawed. With this method we had to load a possible 'N' amount of bytes into direct memory, which is always a bad idea.
+
+In the new scheme created within this commit we do things a little differently:
+
+1) Stream image data directly into local storage
+2) Stream local storage directly to BitmapFactory
+
+This fixes a few issues. The first of which is the (possibly) large byte array in memory, this doesn't exist in this scheme. The second and most important in the long run is the optimal decoding of the Bitmap. We now utilize the ExtendedRequest's getWidth & getHeight methods to resize the Bitmap to exactly what is needed without waste or extra memory consumption.
