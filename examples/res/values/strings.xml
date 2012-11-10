@@ -6,5 +6,6 @@
     <string name="listview_example">ListView</string>
     <string name="gridview_example">GridView</string>
     <string name="statelist_example">StateListDrawable</string>
+    <string name="large_images_example">Issue #18</string>
 
 </resources>
