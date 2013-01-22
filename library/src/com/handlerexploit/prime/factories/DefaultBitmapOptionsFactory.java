@@ -1,0 +1,81 @@
+package com.handlerexploit.prime.factories;
+
+import java.io.InputStream;
+
+import android.graphics.BitmapFactory;
+import android.graphics.BitmapFactory.Options;
+
+import com.handlerexploit.prime.utils.ImageManager.BitmapOptionsFactory;
+
+public class DefaultBitmapOptionsFactory implements BitmapOptionsFactory {
+
+    @Override
+    public Options newOptionsFromStream(InputStream inputStream, int width, int height) {
+        BitmapFactory.Options bitmapFactoryOptions = new BitmapFactory.Options();
+
+        if (height > 0 && width > 0) {
+            bitmapFactoryOptions.inJustDecodeBounds = true;
+
+            BitmapFactory.decodeStream(inputStream, null, bitmapFactoryOptions);
+
+            int actualWidth = bitmapFactoryOptions.outWidth;
+            int actualHeight = bitmapFactoryOptions.outHeight;
+
+            // Then compute the dimensions we would ideally like to decode to.
+            int desiredWidth = getResizedDimension(width, height, actualWidth, actualHeight);
+            int desiredHeight = getResizedDimension(height, width, actualHeight, actualWidth);
+
+            double wr = (double) actualWidth / desiredWidth;
+            double hr = (double) actualHeight / desiredHeight;
+            double ratio = Math.min(wr, hr);
+            float n = 1.0f;
+            while ((n * 2) <= ratio) {
+                n *= 2;
+            }
+
+            bitmapFactoryOptions.inSampleSize = (int) n;
+            bitmapFactoryOptions.inJustDecodeBounds = false;
+        }
+        return bitmapFactoryOptions;
+    }
+
+    /**
+     * Scales one side of a rectangle to fit aspect ratio.
+     * 
+     * @param maxPrimary
+     *            Maximum size of the primary dimension (i.e. width for max
+     *            width), or zero to maintain aspect ratio with secondary
+     *            dimension
+     * @param maxSecondary
+     *            Maximum size of the secondary dimension, or zero to maintain
+     *            aspect ratio with primary dimension
+     * @param actualPrimary
+     *            Actual size of the primary dimension
+     * @param actualSecondary
+     *            Actual size of the secondary dimension
+     */
+    private int getResizedDimension(int maxPrimary, int maxSecondary, int actualPrimary, int actualSecondary) {
+        // If no dominant value at all, just return the actual.
+        if (maxPrimary == 0 && maxSecondary == 0) {
+            return actualPrimary;
+        }
+
+        // If primary is unspecified, scale primary to match secondary's scaling
+        // ratio.
+        if (maxPrimary == 0) {
+            double ratio = (double) maxSecondary / (double) actualSecondary;
+            return (int) (actualPrimary * ratio);
+        }
+
+        if (maxSecondary == 0) {
+            return maxPrimary;
+        }
+
+        double ratio = (double) actualSecondary / (double) actualPrimary;
+        int resized = maxPrimary;
+        if (resized * ratio > maxSecondary) {
+            resized = (int) (maxSecondary / ratio);
+        }
+        return resized;
+    }
+}
