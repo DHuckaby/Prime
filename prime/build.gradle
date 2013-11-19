@@ -1,0 +1,20 @@
+apply plugin: "java"
+
+repositories {
+    maven { url "https://raw.github.com/DHuckaby/commons/mvn-repo" }
+    mavenCentral()
+}
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main { compileClasspath += configurations.provided }
+}
+
+dependencies {
+    provided "com.google.android:android:2.3.3"
+    compile "com.jakewharton:disklrucache:2.0.2"
+    compile "commons-io:commons-io-codec:3.7"
+}
