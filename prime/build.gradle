@@ -4,11 +4,11 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:0.7.1"
+        classpath "com.android.tools.build:gradle:0.7.+"
     }
 }
 
-apply plugin: "android"
+apply plugin: "android-library"
 
 repositories {
     maven { url "https://raw.github.com/DHuckaby/commons/mvn-repo" }
@@ -22,11 +22,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_7
         targetCompatibility = JavaVersion.VERSION_1_7
-    }
-
-    defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 19
     }
 }
 
