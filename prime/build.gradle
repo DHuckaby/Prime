@@ -1,20 +1,31 @@
-apply plugin: "java"
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:0.7.1"
+    }
+}
+
+apply plugin: "android"
 
 repositories {
     maven { url "https://raw.github.com/DHuckaby/commons/mvn-repo" }
     mavenCentral()
 }
 
-configurations {
-    provided
-}
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19"
 
-sourceSets {
-    main { compileClasspath += configurations.provided }
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
 }
 
 dependencies {
-    provided "com.google.android:android:2.3.3"
     compile "com.jakewharton:disklrucache:2.0.2"
     compile "commons-io:commons-io-codec:3.7"
 }
