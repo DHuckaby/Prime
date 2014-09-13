@@ -4,11 +4,11 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:0.8.+"
+        classpath "com.android.tools.build:gradle:0.12.2"
     }
 }
 
-apply plugin: "android-library"
+apply plugin: "com.android.library"
 
 repositories {
     maven { url "https://raw.github.com/DHuckaby/commons/mvn-repo" }
