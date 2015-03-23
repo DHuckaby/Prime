@@ -1,3 +1,6 @@
+**THIS PROJECT IS DISCONTINUED. Use it at your own risk. If you are maintaining a public fork that you would
+like others to consider using, add an issue asking for a link to your fork from this `README`**.
+
 Developed By
 =
 
